@@ -4,6 +4,9 @@ function randomNumber(options) {
     return num;
 }
 
+//declared BUTTON that will start the function
+let button = document.getElementById('button');
+
 function randomMenu() {
     let menuDiv = document.getElementById('created_menu_id');
     menuDiv.style.display = 'block';
@@ -158,7 +161,12 @@ function randomMenu() {
     } else if (!meal.innerHTML.includes('prilogom')) {
         sideDishDiv.style.display = 'none';
     }
+
+    //changing the button's text
+    button.innerHTML = 'Připravit jiné menu'
 }
 
-let button = document.getElementById('button');
+
+//Event Listener on button
+
 button.addEventListener('click', randomMenu);
