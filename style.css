@@ -30,6 +30,29 @@ p {
     padding: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .flexbox {
+        justify-content: flex-start;
+        padding: 0;
+    }
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 40%;
+        padding: 0 2rem;
+    }
+}
+
 /* BUTTON */
 #button {
     margin: 1.25rem 0;
@@ -62,10 +85,24 @@ p {
     color: #59c0df;
     width: 400px;
     height: 350px;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .created_menu {
+        width: 100%;
+        height: 60%;
+        margin-top: 0;
+        padding: 0 2rem;
+    }
+}
+
+/* CREATED MENU TEXTS DIV */
+#created_menu_texts {
+    display: none;
 }
 
 /* MEAL DESCRIPTION <p> */

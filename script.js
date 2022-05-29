@@ -8,8 +8,11 @@ function randomNumber(options) {
 let button = document.getElementById('button');
 
 function randomMenu() {
-    let menuDiv = document.getElementById('created_menu_id');
-    menuDiv.style.display = 'flex';
+    let startingText = document.getElementById('startingText');
+    startingText.style.display = 'none';
+
+    let createdMenuTexts = document.getElementById('created_menu_texts');
+    createdMenuTexts.style.display = 'block';
     //Find the random DRINK and render it to the web
     let drink = document.getElementById('drink');
     let num = randomNumber(6);
