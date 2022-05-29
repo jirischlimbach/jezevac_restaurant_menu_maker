@@ -60,3 +60,9 @@ p {
 .meal_description {
     font-size: 0.9rem;
 }
+
+/* SIDE DISH DIV */
+
+#side_dish_div {
+    display: none;
+}

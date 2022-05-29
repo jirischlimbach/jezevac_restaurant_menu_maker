@@ -5,6 +5,7 @@ function randomNumber(options) {
 }
 
 function randomMenu() {
+    //Find the random DRINK and render it to the web
     let drink = document.getElementById('drink');
     let num = randomNumber(6);
     switch (num) {
@@ -32,6 +33,7 @@ function randomMenu() {
     
     }
 
+    //Find the random STARTER meal and render it to the web
     let starter = document.getElementById('starter');
     num = randomNumber(14);
     switch (num) {
@@ -82,6 +84,7 @@ function randomMenu() {
             break;
     }
 
+    //Find the random main MEAL and render it to the web
     let meal = document.getElementById('meal');
     num = randomNumber(13);
     switch (num) {
@@ -124,17 +127,36 @@ function randomMenu() {
         case 12:
             meal.innerHTML = 'Pržene sardele sa prilogom';
             break;
+        default:
+            meal.innerHTML = 'Pizza Capriciosa';
+            break;
+    }
+
+    //Find the random SIDE DISH if needed (the chosen meal has to be with some side dish) and render it to the web
+    let sideDishDiv = document.getElementById('side_dish_div');
+    //if meal contains 'prilogom' then it will render some random side dish
+    if (meal.innerHTML.includes('prilogom')) {
+        sideDishDiv.style.display = 'block';
+        let sideDish = document.getElementById('side_dish');
+        num = randomNumber(3);
+        switch (num) {
+            case 0:
+                sideDish.innerHTML = 'Slany Krumpir';
+                break;
+            case 1:
+                sideDish.innerHTML = 'Pomfrit';
+                break;
+            case 2:
+                sideDish.innerHTML = 'Blitva';
+                break;
+            default:
+                sideDish.innerHTML = 'Pomfrit'
+                break;
+        }
+    } else {
+        sideDishDiv.style.display = 'none';
     }
 }
 
 let button = document.getElementById('button');
 button.addEventListener('click', randomMenu);
-
-/*
-
-prilohy:
-Slany krumpir
-Pomfrit
-Blitva
-
-*/
