@@ -49,6 +49,9 @@ p {
 }
 
 /* CREATED MENU DIV */
+#created_menu_id {
+    display: none;
+}
 .created_menu {
     margin-top: 2rem;
     padding: 1rem 5rem;
