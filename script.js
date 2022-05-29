@@ -9,7 +9,7 @@ let button = document.getElementById('button');
 
 function randomMenu() {
     let menuDiv = document.getElementById('created_menu_id');
-    menuDiv.style.display = 'block';
+    menuDiv.style.display = 'flex';
     //Find the random DRINK and render it to the web
     let drink = document.getElementById('drink');
     let num = randomNumber(6);
