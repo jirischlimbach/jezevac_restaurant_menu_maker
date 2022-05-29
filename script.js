@@ -13,6 +13,9 @@ function randomMenu() {
 
     let createdMenuTexts = document.getElementById('created_menu_texts');
     createdMenuTexts.style.display = 'block';
+
+    let greetingText = document.getElementById('greeting');
+    greetingText.style.display = 'block';
     //Find the random DRINK and render it to the web
     let drink = document.getElementById('drink');
     let num = randomNumber(6);

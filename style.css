@@ -111,6 +111,19 @@ header {
     }
 }
 
+/* STARTING IMG + TEXT */
+#startingText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+#startingText img {
+    width: 50%;
+}
+
 /* CREATED MENU TEXTS DIV */
 #created_menu_texts {
     display: none;
@@ -125,4 +138,11 @@ header {
 
 #side_dish_div {
     display: none;
+}
+
+/* GREETING */
+#greeting {
+    display: none;
+    padding: 2rem;
+    font-style: italic;
 }
