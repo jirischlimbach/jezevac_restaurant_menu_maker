@@ -78,6 +78,17 @@ header {
     color: white;
 }
 
+@media only screen and (max-width: 768px) {
+    #button:focus {
+        background-color: #59c0df;
+        color: white;
+    }
+    #button:active {
+        background-color: white;
+        color: #59c0df;
+    }
+}
+
 /* CREATED MENU DIV */
 .created_menu {
     margin-top: 2rem;
