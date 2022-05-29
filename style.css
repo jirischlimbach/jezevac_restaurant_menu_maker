@@ -121,7 +121,13 @@ header {
 }
 
 #startingText img {
-    width: 50%;
+    width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    #startingText img {
+        width: 50%;
+    }
 }
 
 /* CREATED MENU TEXTS DIV */
