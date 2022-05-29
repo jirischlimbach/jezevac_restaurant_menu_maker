@@ -153,7 +153,7 @@ function randomMenu() {
                 sideDish.innerHTML = 'Pomfrit'
                 break;
         }
-    } else {
+    } else if (!meal.innerHTML.includes('prilogom')) {
         sideDishDiv.style.display = 'none';
     }
 }
