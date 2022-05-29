@@ -115,7 +115,7 @@ function randomMenu() {
             meal.innerHTML = '1/2 Pileta sa ražnja sa prilogom';
             break;
         case 7:
-            meal.innerHTML = 'Škampi sa žara sa prilogom';
+            meal.innerHTML = 'Škampi na žaru sa prilogom';
             break;
         case 8:
             meal.innerHTML = 'Tuna steak sa prilogom';
